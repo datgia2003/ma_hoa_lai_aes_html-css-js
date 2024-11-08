@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Mã hóa lai</title>
+</head>
+
+<body>
+    <h1>Mã hóa lai</h1>
+    <div class="container">
+        <div class="box1">
+            <h2>Tạo khóa</h2>
+            <form id="Ma-hoa-form">
+                <div class="khoa-form">
+                    <h3>Khóa AES:</h3>
+                    <textarea name="khoa-aes" id="khoa-aes" cols="50" rows="2"></textarea> <br>
+                    <h3>Khóa Public ECC</h3>
+                    <input type="text" id="khoa-public" name="khoa-public">
+                    <button type="button" id="tao-khoa" name="tao-khoa">Tạo Khóa</button><br>
+                    <h3>Bản mã khóa(AES)</h3>
+                    <textarea name="khoa-aes" id="ban_ma_aes" cols="50" rows="2"></textarea>
+                </div>
+                <h2>Mã hóa</h2>
+                <div class="form-group">
+                    <label for="input-data">Bản rõ:</label>
+                    <textarea name="input-data" id="input-data" cols="50" rows="2"></textarea>
+                    <input type="file" id="input-file" name="input-file" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="encrypt()"><i class="fas fa-lock"></i> Mã hóa</button>
+                </div>
+                <div id="result-container">
+                    <h3>Bản mã:</h3>
+                    <textarea id="ketqua-textarea" cols="50" rows="2" readonly></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="chuyen()"><i class="fas fa-exchange-alt"></i> Chuyển</button>
+                    <button type="button" id="luu-ban-ma" name="luu-ma"><i class="far fa-save"></i> Lưu</button>
+                </div>
+            </form>
+        </div>
+        <div class="box2">
+            <h2>Giải mã khóa</h2>
+            <form id="Giai-ma-form">
+                <div class="khoa-form">
+                    <h3>Bản mã khóa AES:</h3>
+                    <textarea name="khoa-aes-giai-ma" id="khoa-aes-giai-ma" cols="50" rows="2"></textarea> <br>
+                    <h3>Khóa Private ECC</h3>
+                    <input type="text" id="khoa-private" name="khoa-private">
+                    <button type="button" id="giai-ma-khoa" name="giai-ma-khoa">Giải mã khóa</button><br>
+                    <h3>Bản rõ khóa AES</h3>
+                    <textarea name="ban-ma-aes" id="ban-ma-aes" cols="50" rows="2"></textarea>
+                </div>
+                <h2>Giải mã</h2>
+                <div class="form-group">
+                    <label for="ban-ma">Bản mã:</label>
+                    <textarea name="ban-ma" id="ban-ma" cols="50" rows="2"></textarea>
+                    <input type="file" id="input-file-ma" name="input-file-ma" required>
+                    <p id="selected-file-ma"></p>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="decrypt()"><i class="fas fa-unlock"></i> Giải mã</button>
+                </div>
+                <div id="result-container-ma">
+                    <h3>Bản rõ:</h3>
+                    <textarea id="ketqua" cols="50" rows="2" readonly></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="luu-ban-ro" name="luu-ro"><i class="far fa-save"></i> Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="AES.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>

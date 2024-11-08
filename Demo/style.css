@@ -1,0 +1,120 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .box1,
+  .box2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 48%;
+  }
+  
+  h1 {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  button {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #result-container,
+  #result-container-ma {
+    margin-top: 20px;
+  }
+  
+  #ketqua-textarea,
+  #ketqua {
+    height: 100px;
+  }
+  
+  #selected-file-ma {
+    margin-top: 10px;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+  }
+  
+  /* Font Awesome Icons */
+  .fa-lock,
+  .fa-unlock,
+  .fa-exchange-alt,
+  .fa-save {
+    margin-right: 5px;
+  }
+  
+  /* Button Colors */
+  #tao-khoa,
+  #giai-ma-khoa,
+  #luu-ban-ma,
+  #luu-ban-ro {
+    background-color: #2196F3;
+  }
+  
+  #tao-khoa:hover,
+  #giai-ma-khoa:hover,
+  #luu-ban-ma:hover,
+  #luu-ban-ro:hover {
+    background-color: red;
+  }
+  
